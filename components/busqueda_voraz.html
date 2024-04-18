@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="busqueda_voraz.css">
+  <title>Inteligencia Artificial</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Inteligencia Artificial</h1>
+      <h2>Algoritmo de búsqueda voraz</h2>
+      <a class="regresar" href="../index.html">Regresar</a>
+    </div>
+    <div id="form">
+      <div class="color">
+      <h4><label for="ciudadOrigen" >Ciudad de Origen:</label></h4>
+      <select id="ciudadOrigen"></select>
+      <h4><label1 for="ciudadDestino">Ciudad de Destino:</label1></h4>
+      <select id="ciudadDestino"></select>
+      <button onclick="Guardarciudades()" margin-botton="2%">Guardar Datos</button>
+    </div>
+    </div>
+  
+  
+    <p id="resultado_distancia">Distancia:</p>
+  
+    <ul id="resultado_ruta"></ul>
+    <section class="figuras">
+      <figure>
+        <figcaption>Mapa de rutas</figcaption>
+        <img src="../img/mapa_ruta_co.png" alt="mapa de rutas" width="350px">
+      </figure>
+      <figure>
+        <img src="../img/Listamapa.jpeg" alt="mapa de rutas" width="350px">
+      </figure>
+    </section>
+  <script src="busqueda_voraz.js"></script>
+</div>
+</body>
+</html>

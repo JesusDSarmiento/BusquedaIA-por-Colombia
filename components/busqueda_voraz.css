@@ -1,0 +1,137 @@
+/* Formulario*/
+.header {
+  
+  border-top:solid black;
+  text-align: center;
+  margin-bottom: 15px;
+  background: url("https://img.freepik.com/free-vector/abstract-earth-relief-map-generated-conceptual-elevation-map_1217-3614.jpg?w=1380&t=st=1681106992~exp=1681107592~hmac=150455474b36dc428c49b09507b350ae6808a103e4a729a0e35f3e2560d9b67c");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+ 
+}
+h1 {
+  margin: 0;
+  margin-top: 2%;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #ffff;
+  font-size: 500%;
+}
+h2 {
+  margin: 0;
+  margin-bottom: 2%;  
+  display: inline-block;
+  color:  #ffff;
+}
+h4{
+  margin-bottom: 10px;  
+  margin-top: 4px;
+  color:  #ffff;
+  font-size: 100%;
+}
+label {
+  font-weight: bold;
+}
+
+.ciudadDestino {
+  font-weight: bold;
+}
+
+/* Resultado */
+
+#resultado_distancia {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #f7dd4a;
+}
+
+.distanciaRuta {
+  margin-left: 20px;
+  font-size: 14px;
+  color:  #f7dd4a;
+}
+
+#resultado_ruta {
+  list-style: none;
+  box-sizing: border-box;
+  border-top: 3px solid #ffff;
+  border-bottom: 3px solid #ffff;
+  height: 40px;
+  padding: 0;
+  padding-bottom: 50px;
+  padding-top: 10px;
+  margin: auto;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 30px;
+  overflow-y: hidden;
+  overflow-x: auto;
+  color: #ffff;
+}
+
+#resultado_ruta li {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0;
+  position: relative;
+  color: #ffff;
+}
+
+#resultado_ruta li:before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  left: 0;
+  top: 25px;
+  background: #f7dd4a;
+  border: 3px solid #ffff;
+  position: absolute;
+}
+
+#resultado_ruta li:first-child {
+  margin-left: 40px;
+  color: #ffff;
+}
+
+#resultado_ruta li:last-child {
+  padding-right: 40px;
+  color: #ffff;
+}
+.regresar {
+  display: inline-block;
+  font-weight: bold;
+  background: #ffff;
+  padding: 10px;
+  color: black;
+}
+
+
+/* figuras*/
+
+.figuras {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+figure {
+  margin: 0;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  width: 450px;
+}
+
+figure img {
+  width: 100%;
+  max-width: 550px;
+}
+
+body{
+  background-color: black;
+}
+.letra{
+   color: #ffff;
+}

@@ -1,0 +1,93 @@
+/* maquina escribir CSS*/
+body {
+  
+  background: url("https://images.squarespace-cdn.com/content/v1/57a63540f7e0ab78c077c6c3/1547214842348-FBTZUJ08XLRD4V9BZ0ZT/9f49c4379ba44167.jpg?format=1500w");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.maquina-escribir {
+  position: relative;
+  background: #f7dd4a;
+  font-size: 20px;
+}
+
+p {
+  text-align: center;
+  margin: 5px;
+}
+
+.maquina-escribir::after {
+  content: "";
+  height: 25px;
+  border-left: 4px solid black;
+  background:#f7dd4a;
+  right: 0;
+  position: absolute;
+  animation: maquinaescribir 3s infinite alternate steps(26);
+}
+
+@keyframes maquinaescribir {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+.ejercicios {
+  max-width: 500px;
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin: auto;
+  margin-top: 10%;
+  
+}
+
+.ejercicios li {
+  padding: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  background-color: #000000;
+  border-left: 3px solid #ffff;
+  border-right: 3px solid #ffff;
+  border-bottom: 1px solid #ffff;
+  border-top: 1px solid #ffff;
+  
+}
+
+.ejercicios li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
+  color: #ffff;
+}
+
+.ejercicios li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  width: 0;
+  z-index: -1;
+  background: #e9dede;
+}
+.ejercicios li:hover::after {
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.7s;
+}
+
+.footer {
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px 20px;
+  color: #ffff;
+  font-size: 10px;
+  margin-top: 10%;
+}
